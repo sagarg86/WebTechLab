@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="Department">
+        <ul id="list1">
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol id="list2">
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <button onclick="myFunction4()">Create new element and give text "Four" in unordered list</button><br><br>
+    <button onclick="myFunction5()">Create new element and give text "Four" in ordered list</button><br><br>
+    <button onclick="myFunction6()">Change Color to blue</button><br><br>
+    <div class="footer">
+    </div>
+    <script>
+        // 1 - Select the section with an id of container without using querySelector.
+
+        document.getElementById("Department");
+
+        // 2 - Select the section with an id of container using querySelector.
+
+        document.querySelector("#Department")
+
+        // 3 - Select all of the list items with a class of "second".
+
+        document.getElementsByClassName("second")
+
+                    // OR
+
+        document.querySelectorAll(".second")
+
+        // 4 - Select a list item with a class of third, but only the list item inside of the ol tag.
+
+        document.querySelector("ol .third");
+
+        // 5 - Give the section with an id of container the text "Hello!".
+        function myFunction7()
+        {
+            var foundDiv = document.querySelector("#Department");
+            foundDiv.innerText = "IT";
+        }
+        
+        //To add  class main to the class footer
+        function myFunction1() 
+        {
+            var element = document.getElementsByClassName("footer");
+            element.className = "main";
+        }
+        //To remove  class main from the class footer
+        function myFunction2() 
+        {
+            var element = document.getElementsByClassName("footer");
+            element.classList.remove("main");
+        }
+        //To remove  class footer
+        function myFunction3() 
+        {
+            var element = document.getElementsByClassName("footer");
+            element.classList.remove("footer");
+        }
+        // Create new element and give text "Four" in unordered list
+        function myFunction4() 
+        {
+            var ul = document.getElementById("list1");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode("Four"));
+            ul.appendChild(li);
+        }
+        // Create new element and give text "Four" in ordered list
+        function myFunction5() 
+        {
+            var ol = document.getElementById("list2");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode("Four"));
+            ol.appendChild(li);
+        }
+
+        //Color the li element of ol
+        function myFunction6()
+        {
+            const lis = document.getElementById('list2').getElementsByTagName('li');
+            for (let i = 0; i <= lis.length - 1; i++) 
+            {
+                lis[i].style.backgroundColor = "Blue";;
+            }
+        }
+
+        var a=document.querySelector("#Department");
+    </script>
+</body>
+</html>

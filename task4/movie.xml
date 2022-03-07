@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="display.xsl"?>
+
+<h1> MOVIES LIST</h1>
+<movie>
+
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+<film>
+<name>ABCD</name>
+<price>$155.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<release>12 Aug</release>
+</film>
+
+</movie>

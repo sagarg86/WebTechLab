@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates Display</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+    
+    input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "container">
+    <h3>Ques4: Given a Date value, display all formats of the given date.</h3>
+    Enter Date: <input type="date" id="d" required>
+    <button class="btn btn-primary" onclick="calculate()">Prin all formats of the given date</button><br /> <br />
+    <p id="dates"></p>
+    </div>
+</body>
+<script>
+    function calculate() {
+        const x = new Date(document.getElementById("d").value);
+        var date = Date.parse(x);
+        console.log(date);
+        if(!date){ 
+            alert("Please Pick Date");
+            return false;
+        }
+        document.getElementById("dates").innerHTML = "";
+        document.getElementById("dates").innerHTML += `ISO Date Format: <b>${x}</b> <br>`;
+        let s = x.toDateString();
+        document.getElementById("dates").innerHTML += `Only Day and Date Format: <b>${s}</b><br>`;
+        s = [x.getDate(),x.getMonth()+1,x.getFullYear()].join('/');
+        document.getElementById("dates").innerHTML += `dd/mm/yyyy Format: <b>${s}</b><br>`;
+        s = [x.getDate(),x.getMonth()+1,x.getFullYear()].join('.');
+        document.getElementById("dates").innerHTML += `dd.mm.yyyy Format: <b>${s}</b><br>`;
+        s = [x.getMonth()+1,x.getDate(),x.getFullYear()].join('/');
+        document.getElementById("dates").innerHTML += `mm/dd/yyyy Format: <b>${s}</b><br>`;
+        s = [x.getMonth()+1,x.getDate(),x.getFullYear()].join('.');
+        document.getElementById("dates").innerHTML += `mm.dd.yyyy Format: <b>${s}</b><br>`;
+        s = [x.getFullYear(),x.getMonth()+1,x.getDate()].join('/');
+        document.getElementById("dates").innerHTML += `yyyy/mm/dd Format: <b>${s}</b><br>`;
+        s = [x.getFullYear(),x.getMonth()+1,x.getDate()].join('.');
+        document.getElementById("dates").innerHTML += `yyyy.mm.dd Format: <b>${s}</b><br>`;
+    }
+
+</script>
+
+</html>

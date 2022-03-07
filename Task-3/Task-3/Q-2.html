@@ -1,0 +1,59 @@
+<html>
+<head> 
+	<title> event-handler </title>
+</head>
+<body>
+	<h1 style="text-align: center; color: rgb(0, 255, 0);"><u><b>EVENT HANDLERS</b></u></h1><br>
+	<!--1-->
+	<h2 style="color:rgb(187, 255, 0);" ><u><b>Event-Handler(on-Click)</u></b></h2>
+	<p>This event handler invokes a JavaScript code when a click action happens on an HTML element. E.g., when we click a button, a link is pushed, a checkbox checks or an image map is selected, it can trigger the onClick event handler.</p><br>
+    <input type="button" id="btn1" value="OnClick" onclick="popop()" />
+    <!--2-->
+    <h2 style="color:rgb(187, 255, 0)" ><u><b>Event-Handler(on-Load)</u></b></h2>
+    <p>This event handler invokes a JavaScript code when a window or image finishes loading.</p><br>
+    <img src="download.jpg" onload="logInfo('image')"/>
+    <!--3-->
+    <h2 style="color:rgb(187, 255, 0)" ><u><b>Event-Handler(onmouseover)</u></b></h2>
+    <p>This event handler invokes a JavaScript code when we place the mouse over a specific link or an object.</p><br>
+    <input type="button" id="btn" value="Submit Button" onmouseover="over()" />
+    <!--4-->
+    <h2 style="color:rgb(187, 255, 0)" ><u><b>Event-Handler(onkeypress)</u></b></h2>
+    <p>This event handler invokes a JavaScript code when the user presses a key.</p><br>
+    <input type="text" id="input"  onkeypress="press()"/>
+    <!--5-->
+    <h2 style="color:rgb(187, 255, 0)" ><u><b>Event-Handler(onkeydown)</u></b></h2>
+    <p>This event handler invokes a JavaScript code when during the keyboard action, we press the key down.</p><br>
+    <input type="text" id="input1"  onkeydown="press2()"/>
+    <!--6-->
+    <h2 style="color:rgb(187, 255, 0);" ><u><b>Event-Handler(onfocus)</u></b></h2>
+    <input type="text" name="email_address" size="40" value="Enter valid email address" onfocus="this.value=''"/>
+    <script>
+    	function popop()
+    	{
+         alert("warning!!!!");
+      	}
+      	function logInfo(info)
+      	{
+         console.log(info+" onload event is triggerred")
+        }
+        function over()
+        {
+         var ele = document.getElementById('btn');
+         ele.style.background='red';
+         ele.style.color='white';
+        }
+        function press()
+        {
+         var ele = document.getElementById('input');
+         ele.style.background='red';
+         ele.style.color='white';
+      	}
+      	function press2()
+      	{
+         var ele = document.getElementById('input1');
+         ele.style.background='green';
+         ele.style.color='yellow';
+      }
+      </script>
+</body>
+</html>
